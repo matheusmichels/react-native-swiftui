@@ -1,0 +1,10 @@
+{
+  "extends": "expo/tsconfig.base",
+  "compilerOptions": {
+    "strict": true,
+    "paths": {
+      "react-native-fun-scroll": ["../src/index"],
+      "react-native-fun-scroll/*": ["../src/*"]
+    }
+  }
+}
