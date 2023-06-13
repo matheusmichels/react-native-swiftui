@@ -6,8 +6,10 @@ export default function ReactNativeFunScrollView(
   props: ReactNativeFunScrollViewProps
 ) {
   return (
-    <div>
-      <span>{props.name}</span>
-    </div>
+    <ul>
+      {props.data.map((item) => (
+        <li>{item}</li>
+      ))}
+    </ul>
   );
 }

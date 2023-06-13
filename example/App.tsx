@@ -1,19 +1,17 @@
-import { StyleSheet, Text, View } from "react-native";
-import * as ReactNativeFunScroll from "react-native-fun-scroll";
+import { View } from "react-native";
+import { ReactNativeFunScrollView } from "react-native-fun-scroll";
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>{ReactNativeFunScroll.hello()}</Text>
+    <View style={{ flex: 1, alignItems: "center", justifyContent: "center" }}>
+      <ReactNativeFunScrollView
+        data={["Play with SwiftUI", "Make coffee", "Play with Expo Modules"]}
+        style={{
+          flex: 1,
+          width: "100%",
+          borderRadius: 12,
+        }}
+      />
     </View>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: "#fff",
-    alignItems: "center",
-    justifyContent: "center",
-  },
-});
